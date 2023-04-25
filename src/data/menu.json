@@ -1,0 +1,14 @@
+[
+   {
+      "name":"Bicycles",
+      "address":"./bicycles"
+   },
+   {
+      "name":"Insurance",
+      "address":"./insurance"
+   },
+   {
+      "name":"Contact",
+      "address":"./contact"
+   }
+]
