@@ -5,7 +5,6 @@ export const MenuContainer = styled.nav`
   .menu-container__menu {
     margin: 0px;
     padding: 0px;
-    list-style: none;
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
