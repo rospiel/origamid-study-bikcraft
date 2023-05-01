@@ -12,13 +12,11 @@ export const MenuContainer = styled.nav`
   }
 
   .menu-container__link {
-    color: #fff;
+    color: var(--color-0);
     display: inline-block;
     padding: 16px 0px;
-    font-size: 18px;
     position: relative;
-    font-family: "Poppins";
-    font-weight: 400;
+    font: var(--font-1-m);
   }
 
   .menu-container__link:after {
@@ -42,13 +40,13 @@ export const MenuContainer = styled.nav`
     }
 
     .menu-container__link {
-      background: #111;
+      background: var(--color-11);
       padding: 12px 16px;
       border-radius: 4px;
     }
 
     .menu-container__link:hover {
-      background-color: #2e2e2e;
+      background-color: var(--color-10);
     }
 
     .menu-container__link:after {

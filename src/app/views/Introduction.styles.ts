@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const IntroductionContainer = styled.main`
-  background: #000;
-  color: #fff;
+  background: var(--color-12);
+  color: var(--color-0);
   /* allow space for the image bottom */
-  box-shadow: inset 0 -120px #fff;
+  box-shadow: inset 0 -120px var(--color-0);;
   
   .introduction-container__content {
     display: grid;
@@ -25,23 +25,19 @@ export const IntroductionContainer = styled.main`
 
   .introduction-container__h1 {
     margin-bottom: 32px;
-    font-size: 64px;
-    line-height: 1.125;
-    font-family: "Poppins";
-    font-weight: 400;
+    font: var(--font-1-xxl);
+    
   }
 
   .introduction-container__h1-span {
-    color: #ffbb00;
+    color: var(--color-p1);
   }
 
   .introduction-container__p {
     margin-bottom: 20px;
-    font-size: 24px;
-    line-height: 1.5;
-    color: #b2b2b2;
-    font-family: "Roboto";
-    font-weight: 400;
+    color: var(--color-5);
+    font: var(--font-2-l);
+    
   }
 
   .introduction-container__img {
@@ -52,16 +48,16 @@ export const IntroductionContainer = styled.main`
 
   @media (max-width: 1200px) {
     .introduction-container__h1 {
-      font-size: 48px;
+      font: var(--font-1-xxl-1200px);
     }
 
     .introduction-container__p {
-      font-size: 18px;
+      font: var(--font-2-l-1200px);
     }
   }
 
   @media (max-width: 800px) {
-    background: #111;
+    background: var(--color-11);
     padding-top: 40px;
     box-shadow: inset 0 -60px #fff;
 
@@ -71,7 +67,7 @@ export const IntroductionContainer = styled.main`
     }
 
     .introduction-container__h1 {
-      font-size: 32px;
+      font: var(--font-1-xxl-800px);
       margin-bottom: 16px;
     }
 

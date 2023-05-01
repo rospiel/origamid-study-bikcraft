@@ -21,7 +21,7 @@ export default function Header() {
 }
 
 const HeaderContainer = styled.header`
-  background-color: #000;
+  background-color: var(--color-12);
   
   .header-container__content {
     display: flex;
