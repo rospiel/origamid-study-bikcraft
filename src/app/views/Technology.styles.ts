@@ -18,16 +18,6 @@ export const TechnologyContainer = styled.article`
     margin-bottom: 20px;
   }
 
-  .technology-container__h2 {
-    font: var(--font-1-xxl);
-    color: var(--color-0);
-    margin-bottom: 32px;
-  }
-
-  .technology-container__dot {
-    color: var(--color-p1);
-  }
-
   .technology-container__p {
     font: var(--font-2-l);
     color: var(--color-5);

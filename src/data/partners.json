@@ -1,0 +1,34 @@
+[
+  {
+    "imageHref": "caravan",
+    "imageAlt": "caravan"
+  },
+  {
+    "imageHref": "ranek",
+    "imageAlt": "ranek"
+  },
+  {
+    "imageHref": "handel",
+    "imageAlt": "handel"
+  },
+  {
+    "imageHref": "dogs",
+    "imageAlt": "dogs"
+  },
+  {
+    "imageHref": "lescone",
+    "imageAlt": "lescone"
+  },
+  {
+    "imageHref": "flexblog",
+    "imageAlt": "flexblog"
+  },
+  {
+    "imageHref": "wildbeast",
+    "imageAlt": "wildbeast"
+  },
+  {
+    "imageHref": "surfbot",
+    "imageAlt": "surfbot"
+  }
+]

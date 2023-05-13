@@ -2,7 +2,7 @@ import bicyclesJson from "../../data/bicycles.json";
 import getImageByKey from "../../util/getImageByKey";
 import * as B from "./Bicycles.styles";
 
-export interface BicyclesData {
+interface BicyclesData {
   linkHref: string;
   imageHref: string;
   imageAlt: string;
