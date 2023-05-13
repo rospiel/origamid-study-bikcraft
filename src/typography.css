@@ -2,6 +2,7 @@
   --font-default: sans-serif;
   --font-1: "Poppins", var(--font-default);
   --font-2: "Roboto", var(--font-default);
+  --font-3: "Merriweather", var(--font-default);
 
   /* weight size/line-height font */
   --font-1-xs: 400 0.75rem/1.35 var(--font-1);

@@ -21,7 +21,7 @@ export default function Bicycles() {
           bicycles.map((bicycle, position) => {
             return (
               <>
-                <li className="bicycles-container__li">
+                <li key={position} className="bicycles-container__li">
                   <a className="bicycles-container__a" key={position} href={bicycle.linkHref}>
                     <img className="bicycles-container__img" src={getImageByKey(bicycle.imageHref)} alt={bicycle.imageAlt} />
                     <h3 className="bicycles-container__h3">{bicycle.name}</h3>
