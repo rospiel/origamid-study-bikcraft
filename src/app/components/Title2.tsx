@@ -7,7 +7,7 @@ export interface Title2Props {
 
 export default function Title2(props: Title2Props) {
   return (
-    <Title2Container className="container__box" color={props.color}>
+    <Title2Container color={props.color}>
       {props.text}<span className="technology-container__dot">.</span>
     </Title2Container>
   )

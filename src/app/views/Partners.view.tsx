@@ -13,7 +13,9 @@ export default function Partners() {
 
   return (
     <P.PartnersContainer aria-label="Our Partners">
-      <Title2 color="--color-12" text="our partners" />
+      <div className="container__box">
+        <Title2 color="--color-12" text="our partners" />
+      </div>
       <ul className="partners-container__ul">
         {
           partners.map((partner, position) => {

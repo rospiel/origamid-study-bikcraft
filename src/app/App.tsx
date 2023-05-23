@@ -1,5 +1,6 @@
 import Bicycles from "./views/Bicycles.view";
 import Header from "./views/Header.view";
+import Insurance from "./views/Insurance.view";
 import Introduction from "./views/Introduction.view";
 import Partners from "./views/Partners.view";
 import Statement from "./views/Statement.view";
@@ -14,6 +15,7 @@ function App() {
       <Technology />
       <Partners />
       <Statement />
+      <Insurance />
     </>
   );
 }
