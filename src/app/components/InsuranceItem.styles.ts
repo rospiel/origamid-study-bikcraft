@@ -57,8 +57,4 @@ export const InsuranceItemContainer = styled.div<{ insuranceType: InsuranceType,
   .insurance-item-container__button {
     grid-column: 1/-1;
   }
-
-  @media (max-width: 800px) {
-    grid-template-columns: 1fr;
-  }
 `

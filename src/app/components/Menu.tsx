@@ -7,11 +7,12 @@ export interface MenuData {
 
 export interface MenuProps {
   data: MenuData[];
+  variant: "vertical" | "horizontal"
 }
 
-export default function Menu({ data }: MenuProps) {
+export default function Menu({ data, variant }: MenuProps) {
   return (
-    <M.MenuContainer aria-label="primaria">
+    <M.MenuContainer variant={variant} aria-label="primaria">
       <ul className="menu-container__menu">
         {
           data.map((item, position) => {

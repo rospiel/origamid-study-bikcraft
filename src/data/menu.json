@@ -10,5 +10,9 @@
    {
       "name":"Contact",
       "address":"./contact"
+   },
+   {
+      "name":"Terms",
+      "address":"./terms"
    }
 ]

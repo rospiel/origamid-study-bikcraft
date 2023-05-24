@@ -1,22 +1,14 @@
-import Bicycles from "./views/Bicycles.view";
-import Header from "./views/Header.view";
-import Insurance from "./views/Insurance.view";
-import Introduction from "./views/Introduction.view";
-import Partners from "./views/Partners.view";
-import Statement from "./views/Statement.view";
-import Technology from "./views/Technology.view";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Main from "./views/Main";
+
 
 function App() {
   return (
-    <>
-      <Header />
-      <Introduction />
-      <Bicycles />
-      <Technology />
-      <Partners />
-      <Statement />
-      <Insurance />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Main />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

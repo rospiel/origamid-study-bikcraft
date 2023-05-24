@@ -12,7 +12,7 @@ export default function Header() {
         <a href="./">
           <img src={logo} alt="Bikcraft" />
         </a>
-        <Menu data={menu} />
+        <Menu variant="horizontal" data={menu} />
 
       </div>
     </HeaderContainer>

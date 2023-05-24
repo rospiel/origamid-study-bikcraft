@@ -1,19 +1,34 @@
 import styled from "styled-components";
 
-export const MenuContainer = styled.nav`
+const THEME = {
+  vertical: {
+    flexDirection: "column",
+    gap: "0px",
+    padding: "0px 0px 16px 0px"
+  }, 
+  horizontal: {
+    flexDirection: "row",
+    gap: "40px",
+    padding: "16px 0px"
+
+  }
+}
+
+export const MenuContainer = styled.nav<{ variant: "vertical" | "horizontal" }>`
 
   .menu-container__menu {
     margin: 0px;
     padding: 0px;
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    flex-direction: ${props => THEME[props.variant].flexDirection};
+    gap: ${props => THEME[props.variant].gap};
   }
 
   .menu-container__link {
     color: var(--color-0);
     display: inline-block;
-    padding: 16px 0px;
+    padding: ${props => THEME[props.variant].padding};
     position: relative;
     font: var(--font-1-m);
   }

@@ -26,7 +26,7 @@ export default function Insurance() {
     <InsuranceContainer>
       <div className="container__box insurance-container__content">
         <div className="insurance-container_title">
-          <Title2 color="--color-0" text="insurance" />
+          <Title2 font="--font-1-xxl" color="--color-0" text="insurance" />
         </div>
         {
           data.map((value, position) => {
@@ -55,6 +55,12 @@ const InsuranceContainer = styled.article`
 
   .insurance-container_title {
     grid-column: 1/-1;
+  }
+
+  @media (max-width: 800px) {
+    .insurance-container__content {
+      grid-template-columns: 1fr;
+    }
   }
 
 `

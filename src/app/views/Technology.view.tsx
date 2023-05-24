@@ -31,7 +31,8 @@ export default function Technology() {
       <div className="container__box technology-container__content">
         <div className="technology-container__text">
           <span className="technology-container__span">advanced technology</span>
-          <Title2 color="--color-0" text="choose your colors and components" />
+          
+          <Title2 font="--font-1-xxl" color="--color-0" text="choose your colors and components" />
           <p className="technology-container__p">Each Bikcraft is unique and has its own identity. The measurements will be exact for your body and height, ensuring greater comfort and ergonomics in your pedaling. You can also completely customize your colors.</p>
           <div className="technology-container__a">
             <Link href="./bicicletas.html" text="choose your model" />

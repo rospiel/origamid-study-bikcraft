@@ -14,7 +14,7 @@ export default function Partners() {
   return (
     <P.PartnersContainer aria-label="Our Partners">
       <div className="container__box">
-        <Title2 color="--color-12" text="our partners" />
+        <Title2 font="--font-1-xxl" color="--color-12" text="our partners" />
       </div>
       <ul className="partners-container__ul">
         {
