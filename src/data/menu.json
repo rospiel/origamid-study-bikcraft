@@ -13,6 +13,6 @@
    },
    {
       "name":"Terms",
-      "address":"./terms"
+      "address":"/terms"
    }
 ]

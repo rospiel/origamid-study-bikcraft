@@ -21,24 +21,17 @@ export default function Footer() {
             <li className="footer-container__li">Missouri, MO</li>
           </ul>
           <div className="footer-container__social-media">
-            <a href="./">
-              <img src={getImageByKey("instagram")} alt="Instagram" />
-            </a>
-            <a href="./">
-              <img src={getImageByKey("facebook")} alt="Facebook" />
-            </a>
-            <a href="./">
-              <img src={getImageByKey("youtube")} alt="Youtube" />
-            </a>
+            <a href="./"><img src={getImageByKey("instagram")} alt="Instagram" /></a>
+            <a href="./"><img src={getImageByKey("facebook")} alt="Facebook" /></a>
+            <a href="./"><img src={getImageByKey("youtube")} alt="Youtube" /></a>
           </div>
         </div>
-        <div className="footer-container__nav">
-            <h3 className="footer-container__h3">Information</h3>
-            <Menu variant="vertical" data={menu} />
-          </div>
+        <div>
+          <h3 className="footer-container__h3">Information</h3>
+          <Menu variant="vertical" data={menu} />
+        </div>
           <p className="footer-container__copy">Bikcraft © All Rights Reserved</p>
       </div>
-
     </FooterContainer>
   )
 }
@@ -52,10 +45,6 @@ const FooterContainer = styled.footer`
     gap: 40px;
     padding-top: 60px;
     padding-bottom: 60px;
-  }
-
-  .footer-container__contact {
-
   }
 
   .footer-container__h3 {
@@ -86,10 +75,6 @@ const FooterContainer = styled.footer`
   .footer-container__social-media {
     display: flex;
     gap: 32px;
-  }
-
-  .footer-container__nav {
-
   }
 
   .footer-container__copy {

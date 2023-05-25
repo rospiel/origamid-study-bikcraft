@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import * as M from "./Menu.styles";
 
 export interface MenuData {
@@ -18,7 +19,7 @@ export default function Menu({ data, variant }: MenuProps) {
           data.map((item, position) => {
             return (
               <li key={position}>
-                <a className="menu-container__link" href={item.address}>{item.name}</a>
+                <Link className="menu-container__link" to={item.address}>{item.name}</Link>
               </li>
             )
           })

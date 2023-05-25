@@ -2,6 +2,7 @@ import styled from "styled-components";
 import logo from "../../img/bikcraft.svg";
 import menuJson from "../../data/menu.json";
 import Menu, { MenuData } from "../components/Menu";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const menu = menuJson as MenuData[];
@@ -9,9 +10,9 @@ export default function Header() {
   return (
     <HeaderContainer>
       <div className="header-container__content">
-        <a href="./">
+        <Link to="/">
           <img src={logo} alt="Bikcraft" />
-        </a>
+        </Link>
         <Menu variant="horizontal" data={menu} />
 
       </div>
@@ -31,7 +32,7 @@ const HeaderContainer = styled.header`
     align-items: center;
     box-sizing: border-box;
     padding: 20px;
-    max-width: 1160px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
   }
