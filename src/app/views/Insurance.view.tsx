@@ -1,27 +1,10 @@
 import styled from "styled-components";
-import InsuranceItem, { InsuranceDetails, InsuranceItemProps, InsuranceType } from "../components/InsuranceItem";
+import InsuranceItem, { InsuranceDetails } from "../components/InsuranceItem";
 import Title2 from "../components/Title2";
+import insuranceJson from "../../data/insurance.json";
 
 export default function Insurance() {
-  const insurance1 = {} as InsuranceItemProps;
-  insurance1.data = {} as InsuranceDetails;
-  insurance1.data.name = InsuranceType.SILVER;
-  insurance1.data.value = "$ 199";
-  insurance1.data.period = "monthly";
-  insurance1.data.benefits = ["Two exchanges a year", "technical support", "Support 08h to 18h", "State coverage"]
-
-  const insurance2 = {} as InsuranceItemProps;
-  insurance2.data = {} as InsuranceDetails;
-  insurance2.data.name = InsuranceType.GOLD;
-  insurance2.data.value = "$ 299";
-  insurance2.data.period = "monthly";
-  insurance2.data.benefits = ["Five exchanges a year", "Special assistance", "Support 24h", "National coverage", "Partner discount", "Access to the Bikcraft Club"]
-
-  let data = {} as InsuranceItemProps[];
-  data = [];
-  data.push(insurance1);
-  data.push(insurance2);
-  
+  const insurance = insuranceJson as InsuranceDetails[];
   return (
     <InsuranceContainer>
       <div className="container__box insurance-container__content">
@@ -29,9 +12,9 @@ export default function Insurance() {
           <Title2 font="--font-1-xxl" color="--color-0" text="insurance" />
         </div>
         {
-          data.map((value, position) => {
+          insurance.map((value, position) => {
             return (
-              <InsuranceItem key={position} data={value.data} />
+              <InsuranceItem key={position} data={value} />
             )
           })
         }

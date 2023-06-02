@@ -1,11 +1,11 @@
 [
    {
       "name":"Bicycles",
-      "address":"./bicycles"
+      "address":"/bicycles"
    },
    {
       "name":"Insurance",
-      "address":"./insurance"
+      "address":"/insurance"
    },
    {
       "name":"Contact",

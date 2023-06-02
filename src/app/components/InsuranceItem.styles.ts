@@ -6,6 +6,7 @@ export const InsuranceItemContainer = styled.div<{ insuranceType: InsuranceType,
   padding: 32px 32px 32px 60px;
   display: grid;
   grid-template-columns: 1fr auto;
+  border-radius: 4px;
 
   .insurance-item-container__h3 {
     font: var(--font-1-xl);

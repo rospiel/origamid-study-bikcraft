@@ -1,0 +1,32 @@
+[
+  {
+    "img": "electric",
+    "title": "Electric Repair",
+    "description": "We guarantee the complete repair of your engine in case of failures. We know that failures are rare, but we are here in case they occur."
+  }, 
+  {
+    "img": "carbon",
+    "title": "Carbon",
+    "description": "Our paintings are made to last forever. But if anything happens, we’re happy to notice."
+  }, 
+  {
+    "img": "sustainable",
+    "title": "Sustainable",
+    "description": "We work with the zero waste philosophy. Any defective part is recycled and reused in another project."
+  },
+  {
+    "img": "tracker",
+    "title": "Tracker",
+    "description": "We use the GPS of your Bikcraft together with security experts to perform the recovery."
+  }, 
+  {
+    "img": "security",
+    "title": "Security",
+    "description": "With Bikcraft insurance you can rest easy knowing that your money will not be lost in cases of theft."
+  }, 
+  {
+    "img": "speed",
+    "title": "Quickness",
+    "description": "Your Bikcraft will be ready for use the same day if you bring it to be repaired at one of the branches."
+  }
+]

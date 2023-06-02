@@ -1,0 +1,18 @@
+[
+  {
+    "name": "SILVER",
+    "value": "$ 199",
+    "period": "monthly",
+    "benefits": [
+      "Two exchanges a year", "technical support", "Support 08h to 18h", "State coverage"
+    ]
+  }, 
+  {
+    "name": "GOLD",
+    "value": "$ 299",
+    "period": "monthly",
+    "benefits": [
+      "Five exchanges a year", "Special assistance", "Support 24h", "National coverage", "Partner discount", "Access to the Bikcraft Club"
+    ]
+  }
+]

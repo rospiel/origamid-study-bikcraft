@@ -2,7 +2,7 @@ import styled from "styled-components";
 import withHeaderAndFooter from "../../util/withHeaderAndFooter"
 import Title2 from "../components/Title2";
 import termsJson from "../../data/terms.json";
-import React from "react";
+import React, { useEffect } from "react";
 
 interface TermsData {
   title: string;
@@ -10,6 +10,11 @@ interface TermsData {
 }
 
 function Terms() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, []);
+  
   const terms = termsJson as TermsData[];
   
   return (
@@ -77,9 +82,6 @@ const TermsContainer = styled.main`
   }
 
   @media (max-width: 800px) {
-    padding-top: 40px;
-    padding-bottom: 40px;
-
     .terms-container__title {
       font-size: 1rem;
       text-transform: lowercase;
