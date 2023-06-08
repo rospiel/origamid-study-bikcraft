@@ -1,0 +1,187 @@
+[
+  {
+    "id": "nimbus",
+    "name": "Nimbus Stark",
+    "description": "Nimbus Stark is the best Bikcraft ever created by our team. It comes equipped with the best accessories, which ensures greater speed.",
+    "deliveryTime": "delivery in 5 days",
+    "stock": "18 in stock",
+    "price": "$ 4999",
+    "imgBicycle": [
+      {
+        "img": "nimbus1", 
+        "alt": ""
+      },
+      {
+        "img": "nimbus2", 
+        "alt": ""
+      },
+      {
+        "img": "nimbus3", 
+        "alt": ""
+      }
+    ],
+    "information": [
+      {
+        "img": "electric",
+        "title": "Electric Motor",
+        "description": "Allows you to travel unimaginable distances with your bike."
+      },
+      {
+        "img": "speed",
+        "title": "50 km/h",
+        "description": "The fastest electric bike available today on the market."
+      },
+      {
+        "img": "tracker",
+        "title": "Tracker",
+        "description": "Tracker and anti-theft system to ensure your peace of mind."
+      },
+      {
+        "img": "carbon",
+        "title": "Carbon Fiber",
+        "description": "Highest possible protection for your Bikcraft with carbon fiber."
+      }
+    ], 
+    "factSheet": [
+      {
+        "name": "Heaviness", 
+        "value": "19.8 lbs"
+      },
+      {
+        "name": "Height", 
+        "value": "60 cm"
+      },
+      {
+        "name": "Width", 
+        "value": "120 cm"
+      },
+      {
+        "name": "Depth", 
+        "value": "10 cm"
+      },
+      {
+        "name": "Marches", 
+        "value": "16"
+      },
+      {
+        "name": "Wheel", 
+        "value": "29"
+      }
+    ]
+  }, 
+  {
+    "id": "magic",
+    "name": "Magic Might",
+    "description": "Magic Might is the best Bikcraft ever created by our team. It comes equipped with the best accessories, which ensures greater speed.",
+    "deliveryTime": "delivery in 5 days",
+    "stock": "18 in stock",
+    "price": "$ 2499",
+    "imgBicycle": [
+      {
+        "img": "nimbus2", 
+        "alt": ""
+      },
+      {
+        "img": "nimbus1", 
+        "alt": ""
+      },
+      {
+        "img": "nimbus3", 
+        "alt": ""
+      }
+    ],
+    "information": [
+      {
+        "img": "electric",
+        "title": "Electric Motor",
+        "description": "Allows you to travel unimaginable distances with your bike."
+      }
+    ], 
+    "factSheet": [
+      {
+        "name": "Heaviness", 
+        "value": "19.8 lbs"
+      },
+      {
+        "name": "Height", 
+        "value": "60 cm"
+      },
+      {
+        "name": "Width", 
+        "value": "120 cm"
+      },
+      {
+        "name": "Depth", 
+        "value": "10 cm"
+      },
+      {
+        "name": "Marches", 
+        "value": "16"
+      },
+      {
+        "name": "Wheel", 
+        "value": "29"
+      }
+    ]
+  }, 
+  {
+    "id": "nebula",
+    "name": "Nebula Cosmic",
+    "description": "Nebula Cosmic is the best Bikcraft ever created by our team. It comes equipped with the best accessories, which ensures greater speed.",
+    "deliveryTime": "delivery in 5 days",
+    "stock": "18 in stock",
+    "price": "$ 3999",
+    "imgBicycle": [
+      {
+        "img": "nimbus3", 
+        "alt": ""
+      },
+      {
+        "img": "nimbus2", 
+        "alt": ""
+      },
+      {
+        "img": "nimbus1", 
+        "alt": ""
+      }
+    ],
+    "information": [
+      {
+        "img": "electric",
+        "title": "Electric Motor",
+        "description": "Allows you to travel unimaginable distances with your bike."
+      },
+      {
+        "img": "speed",
+        "title": "50 km/h",
+        "description": "The fastest electric bike available today on the market."
+      }
+    ], 
+    "factSheet": [
+      {
+        "name": "Heaviness", 
+        "value": "19.8 lbs"
+      },
+      {
+        "name": "Height", 
+        "value": "60 cm"
+      },
+      {
+        "name": "Width", 
+        "value": "120 cm"
+      },
+      {
+        "name": "Depth", 
+        "value": "10 cm"
+      },
+      {
+        "name": "Marches", 
+        "value": "16"
+      },
+      {
+        "name": "Wheel", 
+        "value": "29"
+      }
+    ]
+  }
+]

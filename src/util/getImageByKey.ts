@@ -27,6 +27,15 @@ import speed from "../img/icones/velocidade.svg";
 import tracker from "../img/icones/rastreador.svg";
 import sustainable from "../img/icones/sustentavel.svg";
 import security from "../img/icones/seguro.svg";
+import delivery from "../img/icones/entrega.svg";
+import stock from "../img/icones/estoque.svg";
+
+/* products */
+import nimbus1 from "../img/bicicleta/nimbus1.jpg";
+import nimbus2 from "../img/bicicleta/nimbus2.jpg";
+import nimbus3 from "../img/bicicleta/nimbus3.jpg";
+import insures from "../img/fotos/seguros.jpg";
+
 
 
 const images = {
@@ -53,7 +62,13 @@ const images = {
   speed, 
   tracker, 
   sustainable, 
-  security
+  security, 
+  nimbus1, 
+  nimbus2, 
+  nimbus3, 
+  delivery, 
+  stock, 
+  insures
 };
 
 export default function getImageByKey(key: string) {

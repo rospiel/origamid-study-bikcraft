@@ -13,7 +13,7 @@ function App() {
         <Route path="/" element={<Main />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/bicycles" element={<MainBicycles />} />
-        <Route path="/bicycles/:name" element={<BicycleDetail />} />
+        <Route path="/bicycles/:id" element={<BicycleDetail />} />
         <Route path="/insurance" element={<MainInsurance />} />
       </Routes>
     </BrowserRouter>

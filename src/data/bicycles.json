@@ -1,23 +1,26 @@
 [
   {
-    "linkHref": "./bicicletas/magic.html",
+    "linkHref": "magic",
     "imageHref": "magicHome",
     "imageAlt": "black bicycle",
     "name": "Magic Might",
+    "id": "magic",
     "value": "R$ 2499"
   },
   {
-    "linkHref": "./bicicletas/nimbus.html",
+    "linkHref": "nimbus",
     "imageHref": "nimbusHome",
     "imageAlt": "black bicycle",
     "name": "Nimbus Stark",
+    "id": "nimbus",
     "value": "R$ 4999"
   },
   {
-    "linkHref": "./bicicletas/nebula.html",
+    "linkHref": "nebula",
     "imageHref": "nebulaHome",
     "imageAlt": "black bicycle",
     "name": "Nebula Cosmic",
+    "id": "nebula",
     "value": "R$ 3999"
   }
 ]

@@ -13,6 +13,7 @@ interface BicycleDetails {
 
 interface Bicycle {
   variant: "dark" | "white";
+  id: string;
   name: string;
   imgBicycle: string;
   imgAlt: string;
@@ -29,6 +30,7 @@ function MainBicycles() {
   const bicycles: Bicycle[] =
     [{
       variant: "white",
+      id: "nimbus",
       name: "Nimbus Stark",
       imgBicycle: "nimbus",
       imgAlt: "black bicycle",
@@ -43,20 +45,19 @@ function MainBicycles() {
     },
     {
       variant: "dark",
+      id: "magic",
       name: "Magic Might",
       imgBicycle: "magic",
       imgAlt: "black bicycle",
       description: "Magic Might is the best Bikcraft ever created by our team. It comes equipped with the best accessories, which ensures greater speed.",
       value: "$ 2499",
       details: [
-        { img: "electric", description: "Electric Motor" },
-        { img: "carbon", description: "Carbon Fiber" },
-        { img: "speed", description: "45 km/h" },
-        { img: "tracker", description: "Tracker" }
+        { img: "electric", description: "Electric Motor" }
       ]
       },
     {
       variant: "white",  
+      id: "nebula",
       name: "Nebula Cosmic",
       imgBicycle: "nebula",
       imgAlt: "black bicycle",
@@ -64,9 +65,7 @@ function MainBicycles() {
       value: "$ 3999",
       details: [
         { img: "electric", description: "Electric Motor" },
-        { img: "carbon", description: "Carbon Fiber" },
-        { img: "speed", description: "50 km/h" },
-        { img: "tracker", description: "Tracker" }
+        { img: "speed", description: "50 km/h" }
       ]
       }];
   
@@ -93,7 +92,7 @@ function MainBicycles() {
                   }) }
                 </ul>
                 <div className="main-bicycles-container__button" >
-                  <Button hasArrow={true} href={bike.name} variant="gold" text="More about"  />
+                  <Button hasArrow={true} href={bike.id} variant="gold" text="More about"  />
                 </div>
               </div>
             </div>
