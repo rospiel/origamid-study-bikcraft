@@ -59,6 +59,7 @@ const ButtonContainer = styled.div<{ variant: "silver" | "gold", hasArrow?: bool
       margin-left: 12px;
       background: url(${props.urlArrow});
       transition: transform 0.2s;
+      margin-bottom: 1px;
     }
 
     a:hover::after {

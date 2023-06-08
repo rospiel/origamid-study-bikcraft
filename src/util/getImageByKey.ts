@@ -18,8 +18,11 @@ import surfbot from "../img/parceiros/surfbot.svg";
 
 /* social media */
 import instagram from "../img/redes/instagram.svg";
+import instagram_p from "../img/redes/instagram-p.svg";
 import facebook from "../img/redes/facebook.svg";
+import facebook_p from "../img/redes/facebook-p.svg";
 import youtube from "../img/redes/youtube.svg";
+import youtube_p from "../img/redes/youtube-p.svg";
 
 import electric from "../img/icones/eletrica.svg";
 import carbon from "../img/icones/carbono.svg";
@@ -55,8 +58,11 @@ const images = {
   surfbot, 
   bikcraft, 
   instagram, 
+  instagram_p,
   facebook,
+  facebook_p,
   youtube, 
+  youtube_p,
   electric,
   carbon,
   speed, 

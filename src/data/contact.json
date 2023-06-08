@@ -1,0 +1,28 @@
+{
+  "phone": "tel:+5511999999999",
+  "mail": "mailto:contact@bikcraft.com",
+  "address": {
+    "street": "XXXX NW Bobcat Lane Gold, St. Robert",
+    "state": "Missouri, MO"
+  },
+  "socialMedia": [
+    {
+      "img1": "instagram",
+      "img2": "instagram_p",
+      "alt": "Instagram",
+      "url": "#"
+    },
+    {
+      "img1": "facebook",
+      "img2": "facebook_p",
+      "alt": "Facebook",
+      "url": "#"
+    },
+    {
+      "img1": "youtube",
+      "img2": "youtube_p",
+      "alt": "Youtube",
+      "url": "#"
+    }
+  ]
+}

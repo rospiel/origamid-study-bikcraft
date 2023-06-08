@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import bicyclesJson from "../../data/bicycles.json";
 import getImageByKey from "../../util/getImageByKey";
 import Title2 from "../components/Title2";

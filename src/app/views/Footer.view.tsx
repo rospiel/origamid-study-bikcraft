@@ -1,13 +1,30 @@
 import styled from "styled-components";
 import getImageByKey from "../../util/getImageByKey";
 import menuJson from "../../data/menu.json";
+import contactJson from "../../data/contact.json";
 import Menu, { MenuData } from "../components/Menu";
+
+export interface Contact {
+  phone: string;
+  mail: string;
+  address: {
+    street: string;
+    state: string
+  };
+  socialMedia: [
+    {
+      img1: string;
+      img2: string;
+      alt: string;
+      url: string;
+    }
+  ]
+}
 
 export default function Footer() {
   const menu = menuJson as MenuData[];
-  const phone = "tel:+5511999999999";
-  const mail = "mailto:contact@bikcraft.com";
-
+  const contact = contactJson as Contact;
+  
   return (
     <FooterContainer>
       <div className="footer-container__content container__box">
@@ -15,15 +32,15 @@ export default function Footer() {
         <div className="footer-container__contact">
           <h3 className="footer-container__h3">Contact</h3>
           <ul className="footer-container__ul">
-            <li className="footer-container__li"><a href={phone}>{phone.substring(4)}</a></li>
-            <li className="footer-container__li"><a href={mail}>{mail.substring(7)}</a></li>
-            <li className="footer-container__li">XXXX NW Bobcat Lane Gold, St. Robert</li>
-            <li className="footer-container__li">Missouri, MO</li>
+            <li className="footer-container__li"><a href={contact.phone}>{contact.phone.substring(4)}</a></li>
+            <li className="footer-container__li"><a href={contact.mail}>{contact.mail.substring(7)}</a></li>
+            <li className="footer-container__li">{contact.address.street}</li>
+            <li className="footer-container__li">{contact.address.state}</li>
           </ul>
           <div className="footer-container__social-media">
-            <a href="./"><img src={getImageByKey("instagram")} alt="Instagram" /></a>
-            <a href="./"><img src={getImageByKey("facebook")} alt="Facebook" /></a>
-            <a href="./"><img src={getImageByKey("youtube")} alt="Youtube" /></a>
+            { contact.socialMedia.map((media, position) => {
+              return <a key={position} href={media.url}><img src={getImageByKey(media.img1)} alt={media.alt} /></a>
+            }) }
           </div>
         </div>
         <div>

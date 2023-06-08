@@ -5,10 +5,6 @@ export const BicycleDetailContainer = styled.main`
   padding-bottom: 60px;
   background-color: var(--color-11);
 
-  .bicycle-detail-container__background {
-    
-  }
-
   .bicycle-detail-container__title {
     font: var(--font-2-xl);
     color: var(--color-5);
@@ -36,10 +32,6 @@ export const BicycleDetailContainer = styled.main`
 
   .bicycle-detail-container__img:first-child {
     min-width: 100%; /* just the others images min width 200px */
-  }
-
-  .bicycle-detail-container__content {
-
   }
 
   .bicycle-detail-container__description {
