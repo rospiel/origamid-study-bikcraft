@@ -17,7 +17,7 @@ export default function TechnologyItem(props: TechnologyItemProps) {
         props.data.map((value, position) => {
           return (
             <TechnologyItemContainer key={position}>
-              <img src={value.srcImage} alt="" />
+              <img src={value.srcImage} alt="" width="24" height="24" />
               <h3 className="technology-item-container__h3">{value.name}</h3>
               <p className="technology-item-container__p">{value.description}</p>
             </TechnologyItemContainer>

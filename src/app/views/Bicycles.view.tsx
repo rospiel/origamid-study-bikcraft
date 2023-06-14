@@ -64,7 +64,7 @@ export default function Bicycles(props: BicyclesProps) {
             return (
               <li key={position} className="bicycles-container__li">
                 <Link className="bicycles-container__a" key={position} to={configurePath(bicycle.linkHref)} >
-                  <img className="bicycles-container__img" src={getImageByKey(bicycle.imageHref)} alt={bicycle.imageAlt} />
+                  <img width="920" height="1040" className="bicycles-container__img" src={getImageByKey(bicycle.imageHref)} alt={bicycle.imageAlt} />
                   <h3 className="bicycles-container__h3">{bicycle.name}</h3>
                   <span className="bicycles-container__span">{bicycle.value}</span>
                 </Link>

@@ -28,7 +28,7 @@ export default function Footer() {
   return (
     <FooterContainer>
       <div className="footer-container__content container__box">
-        <img src={getImageByKey("bikcraft")} alt="Bikcraft" />
+        <img width="136" height="32" src={getImageByKey("bikcraft")} alt="Bikcraft" />
         <div className="footer-container__contact">
           <h3 className="footer-container__h3">Contact</h3>
           <ul className="footer-container__ul">
@@ -39,7 +39,7 @@ export default function Footer() {
           </ul>
           <div className="footer-container__social-media">
             { contact.socialMedia.map((media, position) => {
-              return <a key={position} href={media.url}><img src={getImageByKey(media.img1)} alt={media.alt} /></a>
+              return <a key={position} href={media.url}><img width="32" height="32" src={getImageByKey(media.img1)} alt={media.alt} /></a>
             }) }
           </div>
         </div>

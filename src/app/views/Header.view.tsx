@@ -11,7 +11,7 @@ export default function Header() {
     <HeaderContainer>
       <div className="header-container__content">
         <Link to="/">
-          <img src={logo} alt="Bikcraft" />
+          <img src={logo} alt="Bikcraft" width="136" height="32" />
         </Link>
         <Menu variant="horizontal" data={menu} />
 

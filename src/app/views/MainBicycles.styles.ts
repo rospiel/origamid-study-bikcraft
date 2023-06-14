@@ -1,4 +1,5 @@
-import styled from "styled-components"
+import styled from "styled-components";
+import topRight from "../../img/dec/top-right.svg";
 
 const THEME = {
   dark: {
@@ -46,6 +47,7 @@ export const BicycleContainer = styled.div<{variant: "dark" | "white"}>`
     gap: 40px;
     padding-top: 60px;
     padding-bottom: 60px;
+    background: url(${topRight}) no-repeat top 40px right 20px;
   }
 
   .main-bicycles-container__content {

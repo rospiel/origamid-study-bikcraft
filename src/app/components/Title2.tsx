@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import topRight from "../../img/dec/top-right.svg";
 
 export interface Title2Props {
   text: string;
@@ -18,6 +19,7 @@ const Title2Container = styled.h2<{color: string, font: string}>`
   font: var(${props => props.font});
   color: var(${props => props.color});
   margin-bottom: 32px;
+  background: url(${topRight}) no-repeat top right 20px;
 
   .technology-container__dot {
     color: var(--color-p1);

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import bottomRight from "../../img/dec/bottom-right-p.svg";
 
 export const StatementContainer = styled.section`
   display: grid;
@@ -16,6 +17,7 @@ export const StatementContainer = styled.section`
   .statement-container__text {
     padding: 40px 40px 80px 80px;
     align-self: end;
+    background: url(${bottomRight}) no-repeat bottom 40px right 40px;
   }
 
   .statement-container__blockquote {
@@ -51,6 +53,12 @@ export const StatementContainer = styled.section`
   .statement-container__span {
     font: var(--font-1-m-b);
     color: var(--color-p4);
+  }
+
+  @media (min-width: 1200px) {
+    .statement-container__img { 
+      max-height: 520px;
+    }
   }
 
   @media (max-width: 800px) {

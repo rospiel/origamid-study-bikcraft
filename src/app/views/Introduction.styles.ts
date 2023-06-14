@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import bottomLeft from "../../img/dec/bottom-left.svg";
 
 export const IntroductionContainer = styled.main`
-  background: var(--color-12);
+  background: var(--color-12) url(${bottomLeft}) no-repeat bottom 160px left 20px;
   color: var(--color-0);
   /* allow space for the image bottom */
   box-shadow: inset 0 -120px var(--color-0);;

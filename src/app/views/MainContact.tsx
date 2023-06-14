@@ -11,6 +11,8 @@ import email from "../../img/icones/email.svg";
 import phone from "../../img/icones/telefone.svg";
 import Input from "../components/Input";
 import Textarea from "../components/Textarea";
+import bottomLeft from "../../img/dec/bottom-left.svg";
+import bottomRight from "../../img/dec/bottom-right.svg";
 
 function MainContact() {
   useEffect(() => {
@@ -89,10 +91,6 @@ background: linear-gradient(var(--color-11) 600px, var(--color-1) 0px);
     margin-bottom: 4px;
   }
 
-  .main-contact-container__background-content {
-    /*background: linear-gradient(var(--color-11) 600px, var(--color-1) 0px);*/
-  }
-
   .main-contact-container__contact {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -106,7 +104,7 @@ background: linear-gradient(var(--color-11) 600px, var(--color-1) 0px);
 
   .main-contact-container__contact-data {
     border-radius: 5px 0 0 5px;
-    background: var(--color-12);
+    background: var(--color-12) url(${bottomLeft}) no-repeat bottom 20px left 20px;
   }
 
   .main-contact-container__title-contact {
@@ -161,7 +159,7 @@ background: linear-gradient(var(--color-11) 600px, var(--color-1) 0px);
 
   .main-contact-container__contact-form {
     border-radius: 0 5px 5px 0;
-    background: var(--color-0);
+    background: var(--color-0) url(${bottomRight}) no-repeat bottom 20px right 20px;
   }
 
   .main-contact-container__form {
@@ -219,6 +217,7 @@ background: linear-gradient(var(--color-11) 600px, var(--color-1) 0px);
 
     .main-contact-container__contact-data {
       border-radius: 5px 5px 0 0;
+      background: var(--color-12);
     }
 
     .main-contact-container__contact-form {

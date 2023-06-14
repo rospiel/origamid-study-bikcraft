@@ -5,7 +5,7 @@ export default function Statement() {
   return (
     <S.StatementContainer>
       <div>
-        <img className="statement-container__img" src={statement} alt="Person Riding a Bike Bikcraft" />
+        <img width="1560" height="1360" className="statement-container__img" src={statement} alt="Person Riding a Bike Bikcraft" />
       </div>
       <div className="statement-container__text">
         <blockquote className="statement-container__blockquote">

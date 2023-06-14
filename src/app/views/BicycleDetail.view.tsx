@@ -8,7 +8,7 @@ import Bicycles from "./Bicycles.view";
 import { useEffect } from "react";
 import * as BD from "./BicycleDetail.styles";
 
-interface Product {
+export interface Product {
   id: string;
   name: string;
   description: string;
@@ -68,7 +68,7 @@ function BicycleDetail() {
               <p className="bicycle-detail-container__description">{product.description}</p>
               <div className="bicycle-detail-container__buy">
                 <div className="bicycle-detail-container__button">
-                  <Button href="#" text="Buy Now" variant="gold" />
+                  <Button href="/budget" text="Buy Now" variant="gold" />
                 </div>
                 <span className="bicycle-detail-container__buy-details">
                   <img src={getImageByKey("delivery")} alt="" /> {product.deliveryTime}

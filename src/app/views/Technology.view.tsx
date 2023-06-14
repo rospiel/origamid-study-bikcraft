@@ -42,7 +42,7 @@ export default function Technology() {
           </div>
         </div>
         <div>
-          <img  className="technology-container__image" src={technology} alt="" />
+          <img width="1200" height="1920" className="technology-container__image" src={technology} alt="" />
         </div>
 
       </div>
