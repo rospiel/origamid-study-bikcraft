@@ -1,17 +1,18 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-export interface LinkProps {
+export interface RedirectProps {
   href: string;
   text: string;
 }
 
-export default function Link(props: LinkProps) {
+export default function Redirect(props: RedirectProps) {
   return (
-    <LinkContainer href={props.href}>{props.text}</LinkContainer>
+    <LinkContainer to={props.href}>{props.text}</LinkContainer>
   )
 }
 
-const LinkContainer = styled.a`
+const LinkContainer = styled(Link)`
   display: inline-block;
   color: var(--color-p1);
   font: 500 1.5rem/1.5 var(--font-1);

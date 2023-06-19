@@ -8,6 +8,11 @@ import getImageByKey from "../../util/getImageByKey";
 import arrowOpen from "../../img/icones/seta-abrir.svg";
 import * as MI from "./MainInsurance.styles";
 import { useEffect } from "react";
+import { HeadProps } from "../../util/Head";
+
+const head = {} as HeadProps;
+head.title = "Insurance";
+head.description = "Insurance page"
 
 interface BenefitsInsurance {
   img: string;
@@ -87,4 +92,4 @@ function MainInsurance() {
   )
 }
 
-export default withHeaderAndFooter(MainInsurance);
+export default withHeaderAndFooter(MainInsurance, head);

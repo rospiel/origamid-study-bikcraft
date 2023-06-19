@@ -2,7 +2,7 @@ import technology from "../../img/fotos/tecnologia.jpg";
 import electric from "../../img/icones/eletrica.svg";
 import tracker from "../../img/icones/rastreador.svg";
 import TechnologyItem, { TechnologyItemDescription, TechnologyItemProps } from "../components/TechnologyItem";
-import Link from "../components/Link";
+import Redirect from "../components/Redirect";
 import * as T from "./Technology.styles";
 import Title2 from "../components/Title2";
 
@@ -35,7 +35,7 @@ export default function Technology() {
           <Title2 font="--font-1-xxl" color="--color-0" text="choose your colors and components" />
           <p className="technology-container__p">Each Bikcraft is unique and has its own identity. The measurements will be exact for your body and height, ensuring greater comfort and ergonomics in your pedaling. You can also completely customize your colors.</p>
           <div className="technology-container__a">
-            <Link href="./bicicletas.html" text="choose your model" />
+            <Redirect href="bicycles" text="choose your model" />
           </div>
           <div className="technology-container__advantages">
             <TechnologyItem data={buildTechnologyItemDescription()} />

@@ -3,6 +3,11 @@ import withHeaderAndFooter from "../../util/withHeaderAndFooter"
 import Title2 from "../components/Title2";
 import termsJson from "../../data/terms.json";
 import React, { useEffect } from "react";
+import { HeadProps } from "../../util/Head";
+
+const head = {} as HeadProps;
+head.title = "Terms";
+head.description = "Terms page"
 
 interface TermsData {
   title: string;
@@ -90,4 +95,4 @@ const TermsContainer = styled.main`
   }
 `
 
-export default withHeaderAndFooter(Terms);
+export default withHeaderAndFooter(Terms, head);

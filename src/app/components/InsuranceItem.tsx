@@ -37,7 +37,7 @@ export default function InsuranceItem({data: { name, value, period, benefits }}:
         }
       </ul>
       <div className="insurance-item-container__button">
-        <Button variant={configureButtonVariant(name)} href="./orcamento.html" text="Register" />    
+        <Button variant={configureButtonVariant(name)} href="/budget" text="Register" />    
       </div>
     </II.InsuranceItemContainer>
   )

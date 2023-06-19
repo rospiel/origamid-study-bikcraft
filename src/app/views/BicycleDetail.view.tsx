@@ -7,6 +7,11 @@ import Button from "../components/Button";
 import Bicycles from "./Bicycles.view";
 import { useEffect } from "react";
 import * as BD from "./BicycleDetail.styles";
+import { HeadProps } from "../../util/Head";
+
+const head = {} as HeadProps;
+head.title = "Bicycle Detail";
+head.description = "Bicycle detail page"
 
 export interface Product {
   id: string;
@@ -127,4 +132,4 @@ function BicycleDetail() {
   )
 }
 
-export default withHeaderAndFooter(BicycleDetail);
+export default withHeaderAndFooter(BicycleDetail, head);

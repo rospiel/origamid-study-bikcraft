@@ -13,6 +13,11 @@ import Input from "../components/Input";
 import Textarea from "../components/Textarea";
 import bottomLeft from "../../img/dec/bottom-left.svg";
 import bottomRight from "../../img/dec/bottom-right.svg";
+import { HeadProps } from "../../util/Head";
+
+const head = {} as HeadProps;
+head.title = "Contact";
+head.description = "Contact page"
 
 function MainContact() {
   useEffect(() => {
@@ -249,4 +254,4 @@ background: linear-gradient(var(--color-11) 600px, var(--color-1) 0px);
   
 `
 
-export default withHeaderAndFooter(MainContact);
+export default withHeaderAndFooter(MainContact, head);

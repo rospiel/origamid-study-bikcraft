@@ -10,7 +10,7 @@ import Terms from "./views/Terms";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/origamid-study-bikcraft">
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/terms" element={<Terms />} />

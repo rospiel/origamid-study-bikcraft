@@ -5,6 +5,11 @@ import ImgPrice from "../components/ImgPrice";
 import Button from "../components/Button";
 import * as MB from "./MainBicycles.styles";
 import { useEffect } from "react";
+import { HeadProps } from "../../util/Head";
+
+const head = {} as HeadProps;
+head.title = "Bicycles";
+head.description = "Bicycles page"
 
 interface BicycleDetails {
   img: string;
@@ -102,4 +107,4 @@ function MainBicycles() {
     </MB.MainBicyclesContainer>
   )
 }
-export default withHeaderAndFooter(MainBicycles);
+export default withHeaderAndFooter(MainBicycles, head);

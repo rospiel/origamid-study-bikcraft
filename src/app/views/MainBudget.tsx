@@ -1,6 +1,6 @@
 import withHeaderAndFooter from "../../util/withHeaderAndFooter"
 import Title2 from "../components/Title2";
-import React from "react";
+import React, { useEffect } from "react";
 import Input from "../components/Input";
 import Button from "../components/Button";
 import productsJson from "../../data/products.json";
@@ -10,8 +10,17 @@ import { InsuranceDetails } from "../components/InsuranceItem";
 import getImageByKey from "../../util/getImageByKey";
 import Radio, { RadioProps } from "../components/Radio";
 import * as MB from "./MainBudget.styles";
+import { HeadProps } from "../../util/Head";
+
+const head = {} as HeadProps;
+head.title = "Budget";
+head.description = "Budget page"
 
 function MainBudget() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, []);
+
   const products = productsJson as Product[];
   const plans = insuranceJson as InsuranceDetails[];
   const radiosTypeProduct = {} as RadioProps;
@@ -99,4 +108,4 @@ function MainBudget() {
   )
 }
 
-export default withHeaderAndFooter(MainBudget);
+export default withHeaderAndFooter(MainBudget, head);
