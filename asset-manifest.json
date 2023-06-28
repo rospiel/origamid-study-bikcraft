@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/origamid-study-bikcraft/static/css/main.2d09d93e.css",
-    "main.js": "/origamid-study-bikcraft/static/js/main.61505931.js",
+    "main.js": "/origamid-study-bikcraft/static/js/main.55e7df0e.js",
     "static/js/787.2c299922.chunk.js": "/origamid-study-bikcraft/static/js/787.2c299922.chunk.js",
     "static/media/tecnologia.jpg": "/origamid-study-bikcraft/static/media/tecnologia.9da0ce5d9a5d7f7827d5.jpg",
     "static/media/seguros.jpg": "/origamid-study-bikcraft/static/media/seguros.7aa92e3e90b8354b02c1.jpg",
@@ -51,11 +51,11 @@
     "static/media/lista.svg": "/origamid-study-bikcraft/static/media/lista.87b4086630266aad0378e84f5f29f8fd.svg",
     "static/media/seta-abrir.svg": "/origamid-study-bikcraft/static/media/seta-abrir.edab28f59573e33a39a4a5e0ccde68b2.svg",
     "main.2d09d93e.css.map": "/origamid-study-bikcraft/static/css/main.2d09d93e.css.map",
-    "main.61505931.js.map": "/origamid-study-bikcraft/static/js/main.61505931.js.map",
+    "main.55e7df0e.js.map": "/origamid-study-bikcraft/static/js/main.55e7df0e.js.map",
     "787.2c299922.chunk.js.map": "/origamid-study-bikcraft/static/js/787.2c299922.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2d09d93e.css",
-    "static/js/main.61505931.js"
+    "static/js/main.55e7df0e.js"
   ]
 }
