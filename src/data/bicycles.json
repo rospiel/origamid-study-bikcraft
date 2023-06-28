@@ -5,7 +5,7 @@
     "imageAlt": "black bicycle",
     "name": "Magic Might",
     "id": "magic",
-    "value": "R$ 2499"
+    "value": "$ 2499"
   },
   {
     "linkHref": "nimbus",
@@ -13,7 +13,7 @@
     "imageAlt": "black bicycle",
     "name": "Nimbus Stark",
     "id": "nimbus",
-    "value": "R$ 4999"
+    "value": "$ 4999"
   },
   {
     "linkHref": "nebula",
@@ -21,6 +21,6 @@
     "imageAlt": "black bicycle",
     "name": "Nebula Cosmic",
     "id": "nebula",
-    "value": "R$ 3999"
+    "value": "$ 3999"
   }
 ]

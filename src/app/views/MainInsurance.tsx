@@ -7,7 +7,7 @@ import questionsAnswersJson from "../../data/questionsAnswers.json";
 import getImageByKey from "../../util/getImageByKey";
 import arrowOpen from "../../img/icones/seta-abrir.svg";
 import * as MI from "./MainInsurance.styles";
-import { useEffect } from "react";
+import { ReactNode, useEffect } from "react";
 import { HeadProps } from "../../util/Head";
 
 const head = {} as HeadProps;
@@ -25,7 +25,11 @@ interface QuestionAnswers {
   answer: string;
 }
 
-function MainInsurance() {
+export interface MainInsuranceProps {
+  title: ReactNode;
+}
+
+function MainInsurance(props: MainInsuranceProps) {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, []);
@@ -40,7 +44,7 @@ function MainInsurance() {
         <div className="main-insurance-container__background">
           <div className="container__box">
             <p className="main-insurance-container__title">choose the insurance</p>
-            <Title2 color="--color-0" font="--font-1-xxl" text="you safe" />
+            {props.title}
           </div>
         </div>
         <div className="main-insurance-container__insurance">
