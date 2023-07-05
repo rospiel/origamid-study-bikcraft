@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/origamid-study-bikcraft/static/css/main.2d09d93e.css",
-    "main.js": "/origamid-study-bikcraft/static/js/main.55e7df0e.js",
+    "main.js": "/origamid-study-bikcraft/static/js/main.061bf772.js",
     "static/js/787.2c299922.chunk.js": "/origamid-study-bikcraft/static/js/787.2c299922.chunk.js",
     "static/media/tecnologia.jpg": "/origamid-study-bikcraft/static/media/tecnologia.9da0ce5d9a5d7f7827d5.jpg",
     "static/media/seguros.jpg": "/origamid-study-bikcraft/static/media/seguros.7aa92e3e90b8354b02c1.jpg",
@@ -25,8 +25,8 @@
     "static/media/carbono.svg": "/origamid-study-bikcraft/static/media/carbono.880da5534a1a18d1fbc7cbc7f3f9b24b.svg",
     "static/media/instagram-p.svg": "/origamid-study-bikcraft/static/media/instagram-p.f38375e7c645e4a3199679bcd76c9c08.svg",
     "static/media/instagram.svg": "/origamid-study-bikcraft/static/media/instagram.7d8c8a4779225b250f90445a36953bdd.svg",
-    "static/media/caravan.svg": "/origamid-study-bikcraft/static/media/caravan.e18340b68816c31ad1147b4dc7102665.svg",
     "index.html": "/origamid-study-bikcraft/index.html",
+    "static/media/caravan.svg": "/origamid-study-bikcraft/static/media/caravan.e18340b68816c31ad1147b4dc7102665.svg",
     "static/media/eletrica.svg": "/origamid-study-bikcraft/static/media/eletrica.c88698cbcf18a28d3e24705b017d52f1.svg",
     "static/media/handel.svg": "/origamid-study-bikcraft/static/media/handel.7dd2c28e419d512c77d2b8adc12dc3c8.svg",
     "static/media/estoque.svg": "/origamid-study-bikcraft/static/media/estoque.824800055e820892fe8d0bebf0d23ce5.svg",
@@ -51,11 +51,11 @@
     "static/media/lista.svg": "/origamid-study-bikcraft/static/media/lista.87b4086630266aad0378e84f5f29f8fd.svg",
     "static/media/seta-abrir.svg": "/origamid-study-bikcraft/static/media/seta-abrir.edab28f59573e33a39a4a5e0ccde68b2.svg",
     "main.2d09d93e.css.map": "/origamid-study-bikcraft/static/css/main.2d09d93e.css.map",
-    "main.55e7df0e.js.map": "/origamid-study-bikcraft/static/js/main.55e7df0e.js.map",
+    "main.061bf772.js.map": "/origamid-study-bikcraft/static/js/main.061bf772.js.map",
     "787.2c299922.chunk.js.map": "/origamid-study-bikcraft/static/js/787.2c299922.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2d09d93e.css",
-    "static/js/main.55e7df0e.js"
+    "static/js/main.061bf772.js"
   ]
 }
