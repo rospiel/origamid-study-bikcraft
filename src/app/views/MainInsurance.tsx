@@ -34,9 +34,28 @@ function MainInsurance(props: MainInsuranceProps) {
     window.scrollTo(0, 0)
   }, []);
 
+  const classEnable: string = "questions-container__open";
   const insurance = insuranceJson as InsuranceDetails[];
   const benefitsInsurance = benefitsMainInsuranceJson as BenefitsInsurance[];
   const questionsAnswers = questionsAnswersJson as QuestionAnswers[];
+
+  function ifFirstItemEnable(position: number): boolean {
+    return position === 0;
+  }
+
+  function ifFirstItemAddClass(position: number): string {
+    return ifFirstItemEnable(position) ? classEnable : "";
+  }
+
+  function handleClickAnswer(event: React.MouseEvent<HTMLElement>) {
+    const ask = event.currentTarget;
+    const controls = ask.getAttribute("aria-controls");
+    const answer = document.getElementById(controls!);
+
+    answer?.classList.toggle(classEnable);
+    const enable = answer!.classList.contains(classEnable);
+    ask.setAttribute("aria-expanded", "" + enable);
+  }
   
   return (
     <>
@@ -83,8 +102,8 @@ function MainInsurance(props: MainInsuranceProps) {
           { questionsAnswers && questionsAnswers.map((item, position) => {
             return (
               <div className="questions-container__content" key={position}>
-                <dt className="questions-container__dt">{item.question}</dt>
-                <dd className="questions-container__dd">{item.answer}</dd>
+                <dt><button onClick={(event: React.MouseEvent<HTMLElement>) => handleClickAnswer(event)} aria-controls={position.toString()} aria-expanded={ifFirstItemEnable(position)} className="questions-container__dt">{item.question}</button></dt>
+                <dd id={position.toString()} className={"questions-container__dd ".concat(ifFirstItemAddClass(position))}>{item.answer}</dd>
               </div>
             )
           }) }

@@ -5,7 +5,7 @@ import productsJson from "../../data/products.json";
 import getImageByKey from "../../util/getImageByKey";
 import Button from "../components/Button";
 import Bicycles from "./Bicycles.view";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import * as BD from "./BicycleDetail.styles";
 import { HeadProps } from "../../util/Head";
 
@@ -42,6 +42,7 @@ export interface Product {
 }
 
 function BicycleDetail() {
+  const refContainerImages = useRef<HTMLDivElement>(null);
   const params = useParams();
   const products = productsJson as Product[];
   const product: Product = products.find((p) => p.id === params.id) as Product;
@@ -49,6 +50,15 @@ function BicycleDetail() {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [params.id]);
+
+  function handleClickChangeMainImage(event: React.MouseEvent<HTMLImageElement, MouseEvent>): void {
+    const img = event.currentTarget;
+    const isMedia: boolean = matchMedia("(min-width: 1000px)").matches;
+
+    if (isMedia) {
+      refContainerImages.current?.prepend(img);
+    }
+  }
 
   return (
     <>
@@ -64,16 +74,16 @@ function BicycleDetail() {
         
         { product &&
           <div className="bicycle-detail-container__detail container__box">
-            <div className="bicycle-detail-container__images">
+            <div className="bicycle-detail-container__images" ref={refContainerImages}>
               { product.imgBicycle && product.imgBicycle.map((img, position) => {
-                return <img className="bicycle-detail-container__img" key={position} src={getImageByKey(img.img) }alt={img.alt} />
+                return <img onClick={(event: React.MouseEvent<HTMLImageElement, MouseEvent>) => handleClickChangeMainImage(event)} className="bicycle-detail-container__img" key={position} src={getImageByKey(img.img) }alt={img.alt} />
               }) }
             </div>
             <div>
               <p className="bicycle-detail-container__description">{product.description}</p>
               <div className="bicycle-detail-container__buy">
                 <div className="bicycle-detail-container__button">
-                  <Button href="/budget" text="Buy Now" variant="gold" />
+                  <Button href={`/budget?type=bikcraft&product=${product.id}`} text="Buy Now" variant="gold" />
                 </div>
                 <span className="bicycle-detail-container__buy-details">
                   <img src={getImageByKey("delivery")} alt="" /> {product.deliveryTime}

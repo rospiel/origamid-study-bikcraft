@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 export interface RadioProps {
   name: string;
+  selected?: string | null;
   options: [
     {
       value: string;
@@ -17,8 +18,9 @@ export default function Radio(props: RadioProps) {
     <>
       { props.options.map((option, position) => {
         return (
+          
           <React.Fragment key={position}>
-            <InputRadio type="radio" name={props.name} value={option.value} id={option.id} />
+            <InputRadio defaultChecked={props.selected === option.id} type="radio" name={props.name} value={option.value} id={option.id} />
             <Label htmlFor={option.id}>{option.children}</Label>
           </React.Fragment>
         )

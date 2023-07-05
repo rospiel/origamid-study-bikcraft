@@ -102,6 +102,10 @@ export const QuestionsContainer = styled.article<{ imgArrowOpen: string }>`
     align-items: center;
     gap: 8px;
     cursor: pointer;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
   }
 
   .questions-container__dt::before {
@@ -118,7 +122,13 @@ export const QuestionsContainer = styled.article<{ imgArrowOpen: string }>`
     width: 14px;
     height: 6px;
     background: url(${props => props.imgArrowOpen});
+    transition: 0.3s;
   }
+
+  .questions-container__dt:hover::after,
+  .questions-container__dt[aria-expanded="true"]::after {
+    transform: rotate(180deg);
+  }  
 
   .questions-container__dd {
     font: var(--font-2-s);
@@ -126,6 +136,12 @@ export const QuestionsContainer = styled.article<{ imgArrowOpen: string }>`
     padding-left: 20px;
     padding-top: 16px;
     max-width: 80ch;
+    display: none;
+  }
+
+  .questions-container__open {
+    display: block;
+
   }
 
   .questions-container__title {

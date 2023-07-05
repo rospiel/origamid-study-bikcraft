@@ -33,7 +33,7 @@ export const MenuContainer = styled.nav<{ variant: "vertical" | "horizontal" }>`
     font: var(--font-1-m);
   }
 
-  .menu-container__link:after {
+  .menu-container__link::after {
     content: "";
     display: block;
     height: 2px;
@@ -44,7 +44,8 @@ export const MenuContainer = styled.nav<{ variant: "vertical" | "horizontal" }>`
     position: absolute;
   }
 
-  .menu-container__link:hover:after {
+  .menu-container__link:hover::after, 
+  .menu-container__enable-link::after {
     width: 100%;
   }
 

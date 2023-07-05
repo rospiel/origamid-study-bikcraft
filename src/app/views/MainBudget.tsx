@@ -11,6 +11,7 @@ import getImageByKey from "../../util/getImageByKey";
 import Radio, { RadioProps } from "../components/Radio";
 import * as MB from "./MainBudget.styles";
 import { HeadProps } from "../../util/Head";
+import { useLocation } from "react-router-dom";
 
 const head = {} as HeadProps;
 head.title = "Budget";
@@ -21,10 +22,15 @@ function MainBudget() {
     window.scrollTo(0, 0)
   }, []);
 
+  const location = useLocation();
+  const search = new URLSearchParams(location.search);
+  const productSelected = search.get("product");
+  
   const products = productsJson as Product[];
   const plans = insuranceJson as InsuranceDetails[];
   const radiosTypeProduct = {} as RadioProps;
   radiosTypeProduct.name = "type";
+  radiosTypeProduct.selected = search.get("type");
   radiosTypeProduct.options = [{ "id": "bikcraft", "children": "Bikcraft", "value": "bikcraft" }];
   radiosTypeProduct.options.push({ "id": "insurance", "children": "Insurance", "value": "insurance" });
 
@@ -39,14 +45,14 @@ function MainBudget() {
       <form className="budget-container__budget container__box " action="./">
         <div className="budget-container__product">
           <h2 className="budget-container__product-title" >Bikcraft or Insurance?</h2>
-          <Radio name={radiosTypeProduct.name} options={radiosTypeProduct.options} />
+          <Radio name={radiosTypeProduct.name} selected={radiosTypeProduct.selected} options={radiosTypeProduct.options} />
           
           <div className="budget-container__content" id="budget-bikcraft">
             <h2 className="budget-container__content-option">Choose your (BIKCRAFT)</h2>
             { products && products.map((product, position) => {
               return (
                 <React.Fragment key={position}>
-                  <Radio name="product" options={[{ "id": product.id, "children": <>{product.name} <span>{product.price}</span></>, "value": product.id }]} />
+                  <Radio name="product" selected={productSelected} options={[{ "id": product.id, "children": <>{product.name} <span>{product.price}</span></>, "value": product.id }]} />
                   <div className="budget-container__content-option-detail">
                     <ul>
                       { product.information && product.information.map((info, position) => {
@@ -65,7 +71,7 @@ function MainBudget() {
             { plans && plans.map((plan, position) => {
               return (
                 <React.Fragment key={position}>
-                  <Radio name="product" options={[{ "id": plan.name, "children": <>{plan.name}<span>{plan.value}</span></>, "value": plan.name }]} />
+                  <Radio name="product" selected={productSelected} options={[{ "id": plan.name, "children": <>{plan.name}<span>{plan.value}</span></>, "value": plan.name }]} />
                 </React.Fragment>
               )
             }) }

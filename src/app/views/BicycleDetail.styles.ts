@@ -123,6 +123,12 @@ export const BicycleDetailContainer = styled.main`
     color: var(--color-5);
   }
 
+  @media (min-width: 1000px) {
+    .bicycle-detail-container__img {
+      cursor: pointer;
+    }
+  }
+
   @media (max-width: 800px) {
     .bicycle-detail-container__detail {
       grid-template-columns: 1fr;
